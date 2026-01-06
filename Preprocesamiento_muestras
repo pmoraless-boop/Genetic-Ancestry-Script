@@ -9,12 +9,12 @@
    "source": [
     "# SUBIR ARCHIVOS DEL PC AL SERVIDOR \n",
     "\n",
-    "scp \"C:\\Users\\pmorales\\Downloads\\archivo_comprimido_1044.zip\" yordonez3@bio-compjord01:/home/yordonez3/Danny_OV_WES/concatenated_fastq_faltantes/\n",
-    "scp \"C:\\Users\\pmorales\\Downloads\\archivo_comprimido_1044.zip\" yordonez3@130.207.66.26:/home/yordonez3/Danny_OV_WES/concatenated_fastq_faltantes/\n",
+    "scp \"C:\\Users\\pmorales\\Downloads\\archivo_comprimido_1044.zip\" yordonez3@bio-compjord01:/home/yordonez3/Danny_OV_WES/concatenated_fastq/\n",
+    "scp \"C:\\Users\\pmorales\\Downloads\\archivo_comprimido_1044.zip\" yordonez3@130.207.66.26:/home/yordonez3/Danny_OV_WES/concatenated_fastq_/\n",
     "scp \"C:\\Users\\pmorales\\Downloads\\annovar.latest.tar\"  yordonez3@bio-compjord01:/home/yordonez3/Danny_OV_WES/concatenated_fastq/VARIANTES/Mutect2_filtered/normalized/annovar/\n",
     "\n",
     "# SUBIR UN UNICO ARCHIVO DEL PC AL SERVIDOR \n",
-    "scp \"C:\\Users\\pmorales\\Downloads\\OVARIO\\CO-H,_244712*\" yordonez3@130.207.66.26:/home/yordonez3/Danny_OV_WES/concatenated_fastq/OVARIO/\n",
+    "scp \"C:\\Users\\pmorales\\Downloads\\OVARIO\\*\" yordonez3@130.207.66.26:/home/yordonez3/Danny_OV_WES/concatenated_fastq/OVARIO/\n",
     "\n",
     "# Descomprimir el completo \n",
     "\n",
@@ -25,7 +25,7 @@
     "\n",
     "### Si es necesario concatenar varios archivos de la misma muestra:\n",
     "\n",
-    "###concatenar todo\"CO-H,243121\"*\n",
+    "###EJEMPLO:. concatenar todo\"CO-H,243121\"*\n",
     "cat _L*_1.fastq > CO-E_243121_all_R1_fastq\n",
     "cat \"CO-E,275235\"*_L*_1.fastq > CO-E_275235_all_R1_fastq"
    ]
@@ -115,7 +115,7 @@
     "REF_GENOME=\"/home/yordonez3/Danny_OV_WES/concatenated_fastq/concatenated_all_fastq/hg38.fa\"\n",
     "OUTPUT_DIR=\"$FASTQ_DIR\"\n",
     "\n",
-    "# Especificar manualmente el nombre de la muestra (sin _R1.fastq ni _R2.fastq)\n",
+    "# Especificar manualmente el nombre de la muestra si es necesario (sin _R1.fastq ni _R2.fastq)\n",
     "MUESTRA=\"CO-E_236609\"\n",
     "\n",
     "# Definir archivos de entrada\n",
